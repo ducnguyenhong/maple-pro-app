@@ -1,34 +1,41 @@
+import loadable from '@loadable/component';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import * as React from 'react';
-import {Text, View} from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import WebView from 'react-native-webview';
+import {RootTabParamList} from './home.type';
 // import { styles } from './home.styles';
-const Tab = createBottomTabNavigator<any>();
+const BottomTab = createBottomTabNavigator<RootTabParamList>();
+const HeaderTab = loadable(() => import('../../layouts/header-tab'));
 
-const getIconTab = (route: string) => {
+const NewsScreen = loadable(() => import('../news'));
+const CategoryScreen = loadable(() => import('../category'));
+const NoteScreen = loadable(() => import('../note'));
+
+const getIconTab = (route: string, focused: boolean) => {
   switch (route) {
-    case 'Home':
-      return 'home';
+    case 'News':
+      return 'newspaper';
 
-    case 'Setting':
-      return 'cog';
+    case 'Category':
+      return 'menu-sharp';
 
-    case 'Job':
-      return 'briefcase';
+    case 'Weather':
+      return 'partly-sunny';
 
-    case 'Cv':
-      return 'paste';
+    case 'Note':
+      return 'document-text';
 
     default:
       return '';
   }
 };
 
-function TabHome() {
+function TabWeather() {
   return (
     <WebView
       source={{
-        uri: 'https://www.24h.com.vn/bong-da/lich-thi-dau-bong-da-hom-nay-moi-nhat-c48a364371.html',
+        uri: 'https://weather.com/vi-VN/weather/today/l/b0614d49f2964ecd501712774d034f27c842ff0eb4492e1aa7d160e3cb2f67c0',
       }}
       javaScriptEnabled
     />
@@ -37,20 +44,14 @@ function TabHome() {
 
 const HomeScreen: React.FC = () => {
   return (
-    <Tab.Navigator
+    <BottomTab.Navigator
       screenOptions={({route}) => ({
-        // tabBarIcon: ({ color }) => (
-        //   <Icon name={getIconTab(route.name)} size={20} color={color} />
-        // ),
-        tabBarActiveTintColor: '#299D55',
+        tabBarIcon: ({color, focused}) => <Icon name={getIconTab(route.name, focused)} size={20} color={color} />,
+        tabBarActiveTintColor: '#F2922E',
         tabBarInactiveTintColor: '#A7A7A7',
         tabBarStyle: {height: 55, paddingTop: 5},
-        headerStyle: {
-          backgroundColor: '#31BC31',
-        },
-        headerTitleStyle: {
-          color: '#fff',
-        },
+        headerStyle: {backgroundColor: '#090909'},
+        headerTitleStyle: {color: '#fff'},
         tabBarLabelStyle: {
           textTransform: 'uppercase',
           marginBottom: 6,
@@ -59,42 +60,44 @@ const HomeScreen: React.FC = () => {
         headerShown: false,
         tabBarShowLabel: true,
       })}>
-      <Tab.Screen
-        name="TabHome"
-        component={TabHome}
-        // options={{
-        //   tabBarLabel: t('HOME:HOME'),
-        // }}
-      />
-      <Tab.Screen
-        name="Job"
-        component={TabHome}
+      <BottomTab.Screen
+        name="News"
+        component={NewsScreen}
         options={{
-          // header: props => <HeaderTab {...props} title={t('HOME:JOB')} />,
+          tabBarLabel: 'Tin tức',
+          header: props => <HeaderTab {...props} title="Tin tức" />,
           headerShown: true,
-          // tabBarLabel: t('HOME:JOB'),
         }}
       />
-      <Tab.Screen
-        name="Cv"
-        component={TabHome}
+      <BottomTab.Screen
+        name="Weather"
+        component={TabWeather}
         options={{
-          // header: props => <HeaderTab {...props} title={t('HOME:CV')} />,
+          header: props => <HeaderTab {...props} title="Thời tiết" />,
           headerShown: true,
-          // tabBarLabel: t('HOME:CV'),
+          tabBarLabel: 'Thời tiết',
+        }}
+      />
+      <BottomTab.Screen
+        name="Note"
+        component={NoteScreen}
+        options={{
+          header: props => <HeaderTab {...props} title="Ghi chú" />,
+          headerShown: true,
+          tabBarLabel: 'Ghi chú',
         }}
       />
       {/* <Tab.Screen name="CreateTab" component={CreateScreen} /> */}
-      <Tab.Screen
-        name="Setting"
-        component={TabHome}
+      <BottomTab.Screen
+        name="Category"
+        component={CategoryScreen}
         options={{
-          // header: props => <HeaderTab {...props} title={t('HOME:SETTING')} />,
+          header: props => <HeaderTab {...props} title="Danh mục" />,
           headerShown: true,
-          // tabBarLabel: t('HOME:SETTING'),
+          tabBarLabel: 'Danh mục',
         }}
       />
-    </Tab.Navigator>
+    </BottomTab.Navigator>
   );
 };
 

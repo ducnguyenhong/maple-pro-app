@@ -1,11 +1,11 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {AppRoute} from './auth-route';
+import {AuthRoute} from './auth-route';
 
-export function Router() {
+export function AppRouter() {
   return (
     <NavigationContainer>
-      <AppRoute />
+      <AuthRoute />
     </NavigationContainer>
   );
 }

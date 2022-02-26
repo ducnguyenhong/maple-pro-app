@@ -1,16 +1,18 @@
+import loadable from '@loadable/component';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import HomeScreen from '../screens/home';
 import {RootStackParamList} from './router.type';
 
-// const HomeScreen = loadable(() => import('../screens/home'))
+const HomeScreen = loadable(() => import('../screens/home'));
+const NewsWebViewScreen = loadable(() => import('../screens/news/news.webview'));
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
-export const AppRoute = () => {
+export const AuthRoute = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName="Home">
       <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="NewsWebView" component={NewsWebViewScreen} />
       {/* <Stack.Screen
         name="ChangePassword"
         component={ChangePassword}
