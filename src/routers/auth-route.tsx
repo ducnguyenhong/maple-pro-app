@@ -3,8 +3,11 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {RootStackParamList} from './router.type';
 
+const HeaderStack = loadable(() => import('../layouts/header-stack'));
+
 const HomeScreen = loadable(() => import('../screens/home'));
 const NewsWebViewScreen = loadable(() => import('../screens/news/news.webview'));
+const CreateNoteScreen = loadable(() => import('../screens/note/create-note'));
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -13,6 +16,14 @@ export const AuthRoute = () => {
     <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName="Home">
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="NewsWebView" component={NewsWebViewScreen} />
+      <Stack.Screen
+        name="CreateNote"
+        component={CreateNoteScreen}
+        options={{
+          header: props => <HeaderStack {...props} backButton title="Tạo ghi chú" />,
+          headerShown: true,
+        }}
+      />
       {/* <Stack.Screen
         name="ChangePassword"
         component={ChangePassword}

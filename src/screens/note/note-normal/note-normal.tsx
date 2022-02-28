@@ -1,12 +1,16 @@
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {FlatList, Text, TouchableOpacity, View} from 'react-native';
 import {styles} from './note-normal.style';
 
 const NoteNormal: React.FC = () => {
+  const navigation = useNavigation<any>();
+
   return (
     <View style={styles.vMain}>
       <FlatList
         style={styles.flNoteList}
+        showsVerticalScrollIndicator={false}
         data={[1, 2, 3, 4, 5, 6, 7, 8]}
         renderItem={({item}) => (
           <TouchableOpacity style={styles.toNoteItem} activeOpacity={0.8}>
@@ -23,6 +27,7 @@ const NoteNormal: React.FC = () => {
 
       <TouchableOpacity
         activeOpacity={0.9}
+        onPress={() => navigation.navigate('CreateNote')}
         style={{
           width: 55,
           height: 55,
