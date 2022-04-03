@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface MappleProTests : XCTestCase
+@interface MapleProTests : XCTestCase
 
 @end
 
-@implementation MappleProTests
+@implementation MapleProTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

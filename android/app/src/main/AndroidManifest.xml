@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.mapplepro">
+  package="com.maplepro">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "MapplePro.app"
-               BlueprintName = "MapplePro"
-               ReferencedContainer = "container:MapplePro.xcodeproj">
+               BuildableName = "MaplePro.app"
+               BlueprintName = "MaplePro"
+               ReferencedContainer = "container:MaplePro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "MappleProTests.xctest"
-               BlueprintName = "MappleProTests"
-               ReferencedContainer = "container:MapplePro.xcodeproj">
+               BuildableName = "MapleProTests.xctest"
+               BlueprintName = "MapleProTests"
+               ReferencedContainer = "container:MaplePro.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "MapplePro.app"
-            BlueprintName = "MapplePro"
-            ReferencedContainer = "container:MapplePro.xcodeproj">
+            BuildableName = "MaplePro.app"
+            BlueprintName = "MaplePro"
+            ReferencedContainer = "container:MaplePro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "MapplePro.app"
-            BlueprintName = "MapplePro"
-            ReferencedContainer = "container:MapplePro.xcodeproj">
+            BuildableName = "MaplePro.app"
+            BlueprintName = "MaplePro"
+            ReferencedContainer = "container:MaplePro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
