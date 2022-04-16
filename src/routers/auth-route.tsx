@@ -8,6 +8,9 @@ const HeaderStack = loadable(() => import('../layouts/header-stack'));
 const HomeScreen = loadable(() => import('../screens/home'));
 const NewsWebViewScreen = loadable(() => import('../screens/news/news.webview'));
 const CreateNoteScreen = loadable(() => import('../screens/note/create-note'));
+const WebViewScreen = loadable(() => import('../screens/web-view'));
+const SearchScreen = loadable(() => import('../screens/search'));
+const VirtualAssistantScreen = loadable(() => import('../screens/virtual-assistant'));
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -15,7 +18,22 @@ export const AuthRoute = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName="Home">
       <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="NewsWebView" component={NewsWebViewScreen} />
+      <Stack.Screen
+        name="WebView"
+        component={WebViewScreen}
+        options={{
+          header: props => <HeaderStack {...props} backButton title="Maple Pro" />,
+          headerShown: true,
+        }}
+      />
+      <Stack.Screen
+        name="NewsWebView"
+        component={NewsWebViewScreen}
+        options={{
+          header: props => <HeaderStack {...props} backButton title="Maple Pro" />,
+          headerShown: true,
+        }}
+      />
       <Stack.Screen
         name="CreateNote"
         component={CreateNoteScreen}
@@ -24,69 +42,22 @@ export const AuthRoute = () => {
           headerShown: true,
         }}
       />
-      {/* <Stack.Screen
-        name="ChangePassword"
-        component={ChangePassword}
-        options={{
-          header: props => (
-            <HeaderStack
-              {...props}
-              backButton
-              title={t('COMMON:CHANGE_PASS')}
-            />
-          ),
-          headerShown: true,
-        }}
-      />
-      <Stack.Screen name="SearchScreen" component={SearchScreen} />
       <Stack.Screen
-        name="ProfileScreen"
-        component={ProfileScreen}
+        name="Search"
+        component={SearchScreen}
         options={{
-          header: props => (
-            <HeaderStack
-              {...props}
-              backButton
-              title={t('COMMON:INFORMATION')}
-            />
-          ),
+          header: props => <HeaderStack {...props} backButton title="Tìm kiếm" />,
           headerShown: true,
         }}
       />
       <Stack.Screen
-        name="UpdateProfileScreen"
-        component={UpdateProfileScreen}
+        name="VirtualAssistant"
+        component={VirtualAssistantScreen}
         options={{
-          header: props => (
-            <HeaderStack
-              {...props}
-              backButton
-              title={t('COMMON:UPDATE_INFO')}
-            />
-          ),
-          headerShown: true,
-        }}
-      /> */}
-      {/* <Stack.Screen
-        name="JobDetail"
-        component={JobDetail}
-        options={{
-          header: props => (
-            <HeaderStack {...props} backButton title={t('COMMON:JOB_DETAIL')} />
-          ),
+          header: props => <HeaderStack {...props} backButton title="Trợ lý ảo" />,
           headerShown: true,
         }}
       />
-      <Stack.Screen
-        name="CvDetail"
-        component={CvDetail}
-        options={{
-          header: props => (
-            <HeaderStack {...props} backButton title={t('COMMON:CV_DETAIL')} />
-          ),
-          headerShown: true,
-        }}
-      /> */}
     </Stack.Navigator>
   );
 };

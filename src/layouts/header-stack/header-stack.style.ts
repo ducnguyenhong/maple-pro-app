@@ -35,8 +35,7 @@ export const styles = StyleSheet.create({
 
   tTitle: {
     color: '#fff',
-    // fontFamily: fonts.FontQsBold,
-    fontSize: 17,
+    fontSize: 20,
     padding: 15,
   },
 

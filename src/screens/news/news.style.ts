@@ -8,19 +8,19 @@ export const styles = StyleSheet.create({
     backgroundColor: '#F3F3F3',
   },
 
-  vMapple: {
+  vMaple: {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 20,
   },
 
-  imgMapple: {
+  imgMaple: {
     height: 50,
     width: 50,
   },
 
-  tMapple: {
+  tMaple: {
     fontSize: 20,
     marginLeft: 10,
   },

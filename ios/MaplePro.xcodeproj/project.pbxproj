@@ -36,6 +36,24 @@
 		6A2AA5BB8D7A436B8407466D /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BB975EFBD9E4A5D9A3D0C94 /* Octicons.ttf */; };
 		90378795485641A180A6A44A /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10C804697D5B4BEB9B1F3632 /* SimpleLineIcons.ttf */; };
 		736C0F05E30942C992DFF06A /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A07AB97949B24A4A8A4A79B2 /* Zocial.ttf */; };
+		193FD6F30DC04E1F892FFCFA /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73FD5D0EA8C47F8807E67DD /* Quicksand-Bold.ttf */; };
+		2FE30C241E254DBD98E7A03D /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C68C5894C7F4EA790DE6C02 /* Quicksand-Light.ttf */; };
+		103D732C956F420B8EAD2B41 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E345ECFC05E3474EBE74256D /* Quicksand-Medium.ttf */; };
+		3EC3264D0EAF43E1AB50F5A3 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30E9D573A2AF44B8BC518E7A /* Quicksand-Regular.ttf */; };
+		AF9DB6BB374949E2BE735DE0 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1F5E2D53844BCBBEEB8E3D /* Quicksand-SemiBold.ttf */; };
+		657E71B547BB417C867CB68C /* Sarabun-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C626D6D3BCD64F618A26BD61 /* Sarabun-Bold.ttf */; };
+		048F37CC9AC843DABCC737CC /* Sarabun-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE14D71F5F9840DF8FFFDA71 /* Sarabun-ExtraBold.ttf */; };
+		B9430F6A046B493C80D70442 /* Sarabun-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F2296B365E547A0B0CCDAF6 /* Sarabun-ExtraLight.ttf */; };
+		755C8C31D09C4380955CF40B /* Sarabun-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF33091E90804561971C8238 /* Sarabun-Light.ttf */; };
+		7C367E7736364536A5AC4F71 /* Sarabun-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C6F5217213D43E6BFA6822F /* Sarabun-Medium.ttf */; };
+		1F6B139DABBA41F6B021B3E4 /* Sarabun-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19264919D9DC436694C179DC /* Sarabun-Regular.ttf */; };
+		4E2216ACAD65446996015252 /* Sarabun-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D6EE2F162474F80AE024043 /* Sarabun-SemiBold.ttf */; };
+		7926E530862F44F0BEEF6A12 /* Sarabun-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FFFF56DBF744799BDA4D01D /* Sarabun-Thin.ttf */; };
+		8C1D8F938C6442F3A4F33631 /* HelveticaNeue-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5E5B01CB9B842719EC152FD /* HelveticaNeue-Bold.otf */; };
+		4727B304045E4B91B8ED8CD5 /* HelveticaNeue-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68084B62E9724BECBD09331A /* HelveticaNeue-Light.otf */; };
+		492107F2F5844B94AF6C0C04 /* HelveticaNeue-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13E4BED1B48E4C8889F31B4B /* HelveticaNeue-Medium.otf */; };
+		B66C019BF9FD49E987AE30F5 /* HelveticaNeue-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F30F908DCBD44B7EB2C28608 /* HelveticaNeue-UltraLight.otf */; };
+		EFEAB14B69FF40948660B876 /* HelveticaNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36E5F04F415A4F519EFAA124 /* HelveticaNeue.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +106,24 @@
 		6BB975EFBD9E4A5D9A3D0C94 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		10C804697D5B4BEB9B1F3632 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		A07AB97949B24A4A8A4A79B2 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F73FD5D0EA8C47F8807E67DD /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; name = "Quicksand-Bold.ttf"; path = "../assets/fonts/Quicksand-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2C68C5894C7F4EA790DE6C02 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; name = "Quicksand-Light.ttf"; path = "../assets/fonts/Quicksand-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E345ECFC05E3474EBE74256D /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; name = "Quicksand-Medium.ttf"; path = "../assets/fonts/Quicksand-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		30E9D573A2AF44B8BC518E7A /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; name = "Quicksand-Regular.ttf"; path = "../assets/fonts/Quicksand-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF1F5E2D53844BCBBEEB8E3D /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; name = "Quicksand-SemiBold.ttf"; path = "../assets/fonts/Quicksand-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C626D6D3BCD64F618A26BD61 /* Sarabun-Bold.ttf */ = {isa = PBXFileReference; name = "Sarabun-Bold.ttf"; path = "../assets/fonts/Sarabun-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CE14D71F5F9840DF8FFFDA71 /* Sarabun-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Sarabun-ExtraBold.ttf"; path = "../assets/fonts/Sarabun-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3F2296B365E547A0B0CCDAF6 /* Sarabun-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Sarabun-ExtraLight.ttf"; path = "../assets/fonts/Sarabun-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DF33091E90804561971C8238 /* Sarabun-Light.ttf */ = {isa = PBXFileReference; name = "Sarabun-Light.ttf"; path = "../assets/fonts/Sarabun-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C6F5217213D43E6BFA6822F /* Sarabun-Medium.ttf */ = {isa = PBXFileReference; name = "Sarabun-Medium.ttf"; path = "../assets/fonts/Sarabun-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		19264919D9DC436694C179DC /* Sarabun-Regular.ttf */ = {isa = PBXFileReference; name = "Sarabun-Regular.ttf"; path = "../assets/fonts/Sarabun-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0D6EE2F162474F80AE024043 /* Sarabun-SemiBold.ttf */ = {isa = PBXFileReference; name = "Sarabun-SemiBold.ttf"; path = "../assets/fonts/Sarabun-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7FFFF56DBF744799BDA4D01D /* Sarabun-Thin.ttf */ = {isa = PBXFileReference; name = "Sarabun-Thin.ttf"; path = "../assets/fonts/Sarabun-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D5E5B01CB9B842719EC152FD /* HelveticaNeue-Bold.otf */ = {isa = PBXFileReference; name = "HelveticaNeue-Bold.otf"; path = "../assets/fonts/HelveticaNeue-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		68084B62E9724BECBD09331A /* HelveticaNeue-Light.otf */ = {isa = PBXFileReference; name = "HelveticaNeue-Light.otf"; path = "../assets/fonts/HelveticaNeue-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		13E4BED1B48E4C8889F31B4B /* HelveticaNeue-Medium.otf */ = {isa = PBXFileReference; name = "HelveticaNeue-Medium.otf"; path = "../assets/fonts/HelveticaNeue-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F30F908DCBD44B7EB2C28608 /* HelveticaNeue-UltraLight.otf */ = {isa = PBXFileReference; name = "HelveticaNeue-UltraLight.otf"; path = "../assets/fonts/HelveticaNeue-UltraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		36E5F04F415A4F519EFAA124 /* HelveticaNeue.otf */ = {isa = PBXFileReference; name = "HelveticaNeue.otf"; path = "../assets/fonts/HelveticaNeue.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +255,24 @@
 				6BB975EFBD9E4A5D9A3D0C94 /* Octicons.ttf */,
 				10C804697D5B4BEB9B1F3632 /* SimpleLineIcons.ttf */,
 				A07AB97949B24A4A8A4A79B2 /* Zocial.ttf */,
+				F73FD5D0EA8C47F8807E67DD /* Quicksand-Bold.ttf */,
+				2C68C5894C7F4EA790DE6C02 /* Quicksand-Light.ttf */,
+				E345ECFC05E3474EBE74256D /* Quicksand-Medium.ttf */,
+				30E9D573A2AF44B8BC518E7A /* Quicksand-Regular.ttf */,
+				FF1F5E2D53844BCBBEEB8E3D /* Quicksand-SemiBold.ttf */,
+				C626D6D3BCD64F618A26BD61 /* Sarabun-Bold.ttf */,
+				CE14D71F5F9840DF8FFFDA71 /* Sarabun-ExtraBold.ttf */,
+				3F2296B365E547A0B0CCDAF6 /* Sarabun-ExtraLight.ttf */,
+				DF33091E90804561971C8238 /* Sarabun-Light.ttf */,
+				6C6F5217213D43E6BFA6822F /* Sarabun-Medium.ttf */,
+				19264919D9DC436694C179DC /* Sarabun-Regular.ttf */,
+				0D6EE2F162474F80AE024043 /* Sarabun-SemiBold.ttf */,
+				7FFFF56DBF744799BDA4D01D /* Sarabun-Thin.ttf */,
+				D5E5B01CB9B842719EC152FD /* HelveticaNeue-Bold.otf */,
+				68084B62E9724BECBD09331A /* HelveticaNeue-Light.otf */,
+				13E4BED1B48E4C8889F31B4B /* HelveticaNeue-Medium.otf */,
+				F30F908DCBD44B7EB2C28608 /* HelveticaNeue-UltraLight.otf */,
+				36E5F04F415A4F519EFAA124 /* HelveticaNeue.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -342,6 +396,24 @@
 				6A2AA5BB8D7A436B8407466D /* Octicons.ttf in Resources */,
 				90378795485641A180A6A44A /* SimpleLineIcons.ttf in Resources */,
 				736C0F05E30942C992DFF06A /* Zocial.ttf in Resources */,
+				193FD6F30DC04E1F892FFCFA /* Quicksand-Bold.ttf in Resources */,
+				2FE30C241E254DBD98E7A03D /* Quicksand-Light.ttf in Resources */,
+				103D732C956F420B8EAD2B41 /* Quicksand-Medium.ttf in Resources */,
+				3EC3264D0EAF43E1AB50F5A3 /* Quicksand-Regular.ttf in Resources */,
+				AF9DB6BB374949E2BE735DE0 /* Quicksand-SemiBold.ttf in Resources */,
+				657E71B547BB417C867CB68C /* Sarabun-Bold.ttf in Resources */,
+				048F37CC9AC843DABCC737CC /* Sarabun-ExtraBold.ttf in Resources */,
+				B9430F6A046B493C80D70442 /* Sarabun-ExtraLight.ttf in Resources */,
+				755C8C31D09C4380955CF40B /* Sarabun-Light.ttf in Resources */,
+				7C367E7736364536A5AC4F71 /* Sarabun-Medium.ttf in Resources */,
+				1F6B139DABBA41F6B021B3E4 /* Sarabun-Regular.ttf in Resources */,
+				4E2216ACAD65446996015252 /* Sarabun-SemiBold.ttf in Resources */,
+				7926E530862F44F0BEEF6A12 /* Sarabun-Thin.ttf in Resources */,
+				8C1D8F938C6442F3A4F33631 /* HelveticaNeue-Bold.otf in Resources */,
+				4727B304045E4B91B8ED8CD5 /* HelveticaNeue-Light.otf in Resources */,
+				492107F2F5844B94AF6C0C04 /* HelveticaNeue-Medium.otf in Resources */,
+				B66C019BF9FD49E987AE30F5 /* HelveticaNeue-UltraLight.otf in Resources */,
+				EFEAB14B69FF40948660B876 /* HelveticaNeue.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

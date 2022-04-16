@@ -20,7 +20,6 @@ export const styles = StyleSheet.create({
 
   tNoteItemTitle: {
     fontSize: 15,
-    fontFamily: 'Font-Bold',
   },
 
   tNoteItemPreview: {

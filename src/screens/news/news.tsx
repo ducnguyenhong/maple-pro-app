@@ -3,16 +3,16 @@ import React from 'react';
 import {Image, View, Text, TouchableOpacity} from 'react-native';
 import {NEWS_WEB_LIST} from './news.data';
 import {styles} from './news.style';
-import MappleLogo from '../../assets/common/logo.png';
+import MapleLogo from '../../assets/common/logo.png';
 
 const NewsScreen: React.FC = () => {
   const navigation = useNavigation<any>();
 
   return (
     <View style={styles.vNews}>
-      <View style={styles.vMapple}>
-        <Image source={MappleLogo} resizeMode="contain" style={styles.imgMapple} />
-        <Text style={styles.tMapple}>Mapple Pro</Text>
+      <View style={styles.vMaple}>
+        <Image source={MapleLogo} resizeMode="contain" style={styles.imgMaple} />
+        <Text style={styles.tMaple}>Maple Pro</Text>
       </View>
       <View style={styles.vNewsList}>
         {NEWS_WEB_LIST.map(item => {

@@ -1,100 +1,198 @@
 import loadable from '@loadable/component';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createBottomTabNavigator, BottomTabBar} from '@react-navigation/bottom-tabs';
 import * as React from 'react';
-import Icon from 'react-native-vector-icons/Ionicons';
+import IonIcon from 'react-native-vector-icons/Ionicons';
+import McIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import WebView from 'react-native-webview';
+import {styles} from './home.style';
 import {RootTabParamList} from './home.type';
+import {Alert, Animated, StyleSheet, TouchableOpacity, View} from 'react-native';
+import {CurvedBottomBar} from 'react-native-curved-bottom-bar';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+
 // import { styles } from './home.styles';
 const BottomTab = createBottomTabNavigator<RootTabParamList>();
 const HeaderTab = loadable(() => import('../../layouts/header-tab'));
 
 const NewsScreen = loadable(() => import('../news'));
 const CategoryScreen = loadable(() => import('../category'));
-const NoteScreen = loadable(() => import('../note'));
+const DiscoveryScreen = loadable(() => import('../discovery'));
+const UtilityScreen = loadable(() => import('../utility'));
 
-const getIconTab = (route: string, focused: boolean) => {
-  switch (route) {
-    case 'News':
-      return 'newspaper';
+const getIconTab = (routeName: string, focused: boolean, color: string) => {
+  switch (routeName) {
+    case 'Home':
+      return <IonIcon name={focused ? 'home' : 'home-outline'} color={color} size={20} />;
 
-    case 'Category':
-      return 'menu-sharp';
+    case 'Application':
+      return <IonIcon name={focused ? 'grid' : 'grid-outline'} color={color} size={19.5} />;
 
-    case 'Weather':
-      return 'partly-sunny';
+    case 'Discovery':
+      return <IonIcon name={focused ? 'compass' : 'compass-outline'} color={color} size={24} />;
 
-    case 'Note':
-      return 'document-text';
+    case 'Utility':
+      return <McIcon name={focused ? 'layers' : 'layers-outline'} color={color} size={24.5} />;
+
+    case 'User':
+      return <IonIcon name={focused ? 'person-circle' : 'person-circle-outline'} color={color} size={23.5} />;
 
     default:
-      return '';
+      return null;
   }
 };
 
-function TabWeather() {
+const _renderIcon = (routeName: string, selectedTab: string) => {
+  let icon = '';
+
+  switch (routeName) {
+    case 'title1':
+      icon = 'ios-home-outline';
+      break;
+    case 'title2':
+      icon = 'settings-outline';
+      break;
+    case 'title3':
+      icon = 'ios-home-outline';
+      break;
+    case 'title4':
+      icon = 'settings-outline';
+      break;
+  }
+
+  return <Ionicons name={icon} size={25} color={routeName === selectedTab ? 'black' : 'gray'} />;
+};
+
+const renderTabBar = ({routeName, selectedTab, navigate}: any) => {
   return (
-    <WebView
-      source={{
-        uri: 'https://weather.com/vi-VN/weather/today/l/b0614d49f2964ecd501712774d034f27c842ff0eb4492e1aa7d160e3cb2f67c0',
-      }}
-      javaScriptEnabled
-    />
+    <TouchableOpacity
+      onPress={() => navigate(routeName)}
+      style={{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+      {_renderIcon(routeName, selectedTab)}
+    </TouchableOpacity>
   );
-}
+};
 
 const HomeScreen: React.FC = () => {
   return (
+    // <CurvedBottomBar.Navigator
+    //   style={styles.bottomBar}
+    //   strokeWidth={0.5}
+    //   height={50}
+    //   circleWidth={50}
+    //   bgColor="white"
+    //   initialRouteName="title1"
+    //   borderTopLeftRight
+    //   swipeEnabled
+    //   renderCircle={({selectedTab, navigate}) => (
+    //     <Animated.View style={styles.btnCircle}>
+    //       <TouchableOpacity
+    //         style={{
+    //           flex: 1,
+    //           justifyContent: 'center',
+    //         }}
+    //         onPress={() => Alert.alert('Click Action')}>
+    //         {/* <Ionicons name={'apps-sharp'} color="gray" size={25} /> */}
+    //         <Ionicons name={selectedTab === '' ? 'compass' : 'compass-outline'} color="gray" size={35} />
+    //       </TouchableOpacity>
+    //     </Animated.View>
+    //   )}
+    //   tabBar={renderTabBar}>
+    //   <CurvedBottomBar.Screen
+    //     name="title1"
+    //     position="left"
+    //     component={({navigate}) => <View style={{backgroundColor: '#BFEFFF', flex: 1}} />}
+    //   />
+    //   <CurvedBottomBar.Screen
+    //     name="title2"
+    //     component={({navigate}) => <View style={{backgroundColor: '#FFEBCD', flex: 1}} />}
+    //     position="right"
+    //   />
+    //   <CurvedBottomBar.Screen
+    //     name="title3"
+    //     position="left"
+    //     component={({navigate}) => <View style={{backgroundColor: '#BFEFFF', flex: 1}} />}
+    //   />
+    //   <CurvedBottomBar.Screen
+    //     name="title4"
+    //     component={({navigate}) => <View style={{backgroundColor: '#FFEBCD', flex: 1}} />}
+    //     position="right"
+    //   />
+    // </CurvedBottomBar.Navigator>
     <BottomTab.Navigator
+      initialRouteName="Discovery"
       screenOptions={({route}) => ({
-        tabBarIcon: ({color, focused}) => <Icon name={getIconTab(route.name, focused)} size={20} color={color} />,
-        tabBarActiveTintColor: '#F2922E',
+        // style: styles.navigator,
+        tabStyle: {
+          // backgroundColor: barColor
+        },
+        tabBarIcon: ({color, focused}) => getIconTab(route.name, focused, color),
+        tabBarActiveTintColor: '#02B04B',
         tabBarInactiveTintColor: '#A7A7A7',
-        tabBarStyle: {height: 55, paddingTop: 5},
+        tabBarStyle: {
+          height: 60,
+          paddingTop: 5,
+          overflow: 'hidden',
+          borderTopRightRadius: 20,
+          // borderTopStartRadius: 30,
+          borderTopLeftRadius: 20,
+        },
         headerStyle: {backgroundColor: '#090909'},
-        headerTitleStyle: {color: '#fff'},
+        headerTitleStyle: {color: '#FFF'},
         tabBarLabelStyle: {
-          textTransform: 'uppercase',
-          marginBottom: 6,
-          // fontFamily: fonts.FontQsSemiBold,
+          marginBottom: 8,
+          fontSize: 13,
+          fontFamily: 'HelveticaNeue',
         },
         headerShown: false,
         tabBarShowLabel: true,
       })}>
       <BottomTab.Screen
-        name="News"
+        name="Home"
         component={NewsScreen}
         options={{
-          tabBarLabel: 'Tin tức',
-          header: props => <HeaderTab {...props} title="Tin tức" />,
+          tabBarLabel: 'Trang chủ',
+          header: props => <HeaderTab {...props} title="Trang chủ" />,
           headerShown: true,
         }}
       />
       <BottomTab.Screen
-        name="Weather"
-        component={TabWeather}
+        name="Application"
+        component={UtilityScreen}
         options={{
-          header: props => <HeaderTab {...props} title="Thời tiết" />,
+          header: props => <HeaderTab {...props} title="Ứng dụng" />,
           headerShown: true,
-          tabBarLabel: 'Thời tiết',
+          tabBarLabel: 'Ứng dụng',
         }}
       />
       <BottomTab.Screen
-        name="Note"
-        component={NoteScreen}
+        name="Discovery"
+        component={DiscoveryScreen}
         options={{
-          header: props => <HeaderTab {...props} title="Ghi chú" />,
-          headerShown: true,
-          tabBarLabel: 'Ghi chú',
+          header: props => <HeaderTab {...props} title="Khám phá" />,
+          // headerShown: true,
+          tabBarLabel: 'Khám phá',
         }}
       />
-      {/* <Tab.Screen name="CreateTab" component={CreateScreen} /> */}
       <BottomTab.Screen
-        name="Category"
+        name="Utility"
+        component={UtilityScreen}
+        options={{
+          header: props => <HeaderTab {...props} title="Tiện ích" />,
+          headerShown: true,
+          tabBarLabel: 'Tiện ích',
+        }}
+      />
+      <BottomTab.Screen
+        name="User"
         component={CategoryScreen}
         options={{
-          header: props => <HeaderTab {...props} title="Danh mục" />,
+          header: props => <HeaderTab {...props} title="Tài khoản" />,
           headerShown: true,
-          tabBarLabel: 'Danh mục',
+          tabBarLabel: 'Tài khoản',
         }}
       />
     </BottomTab.Navigator>
