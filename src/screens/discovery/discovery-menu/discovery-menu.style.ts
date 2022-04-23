@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
   },
 
   tItem: {
-    fontFamily: 'HelveticaNeue-Medium',
+    fontFamily: 'SVN-Gilroy Medium',
     fontSize: 14,
     marginTop: 3,
     color: '#737373',

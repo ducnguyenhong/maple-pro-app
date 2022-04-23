@@ -12,7 +12,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 // import { styles } from './home.styles';
 const BottomTab = createBottomTabNavigator<RootTabParamList>();
-const HeaderTab = loadable(() => import('../../layouts/header-tab'));
+const HeaderTab = loadable(() => import('layouts/header-tab'));
 
 const NewsScreen = loadable(() => import('../news'));
 const CategoryScreen = loadable(() => import('../category'));
@@ -145,7 +145,7 @@ const HomeScreen: React.FC = () => {
         tabBarLabelStyle: {
           marginBottom: 8,
           fontSize: 13,
-          fontFamily: 'HelveticaNeue',
+          fontFamily: 'SVN-Gilroy Medium',
         },
         headerShown: false,
         tabBarShowLabel: true,

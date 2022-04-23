@@ -54,6 +54,24 @@
 		492107F2F5844B94AF6C0C04 /* HelveticaNeue-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13E4BED1B48E4C8889F31B4B /* HelveticaNeue-Medium.otf */; };
 		B66C019BF9FD49E987AE30F5 /* HelveticaNeue-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F30F908DCBD44B7EB2C28608 /* HelveticaNeue-UltraLight.otf */; };
 		EFEAB14B69FF40948660B876 /* HelveticaNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36E5F04F415A4F519EFAA124 /* HelveticaNeue.otf */; };
+		67D463EB508641AA9E9C00E7 /* Geomanist-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 765F65C4E2D043FD8935699B /* Geomanist-Black.otf */; };
+		B2CF293C306A4C62B502B87B /* Geomanist-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7D6968A9A7845E2A1A6B8AF /* Geomanist-Bold.otf */; };
+		9821177C69BD439EB7C66965 /* Geomanist-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE1B33A00F7C417BA50CE07E /* Geomanist-Book.otf */; };
+		A7D517206B254267A81195A0 /* Geomanist-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD00FA399B12414B823A918B /* Geomanist-Light.otf */; };
+		9DE2C61543A840EA95A1CDF1 /* Geomanist-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8D1919DB97B14FF6A6B31A45 /* Geomanist-Medium.otf */; };
+		8597AA158D2C488CB97E1609 /* Geomanist-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C0372FC2B49400BB98B67C3 /* Geomanist-Regular.otf */; };
+		65F3993F607041E3BC27C7B8 /* Geomanist-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEE212B2C7B3434FAEC702EC /* Geomanist-Thin.otf */; };
+		C18F6009487049B08E22CD67 /* Geomanist-Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2803711B1984DDE89CB1487 /* Geomanist-Ultra.otf */; };
+		95BE4B75325249F7A2FB291B /* SVN-Gilroy Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75E7DAAAA4554825BC6A34FE /* SVN-Gilroy Black.otf */; };
+		EC2A73AC03094370B4A6364F /* SVN-Gilroy Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5ABDEA66449341A8A40741A4 /* SVN-Gilroy Bold.otf */; };
+		0345D8C777FF427091EA2A88 /* SVN-Gilroy Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 79DCE62ED3924B888C5A8D00 /* SVN-Gilroy Heavy.otf */; };
+		6E90DE19090D4C44B1DDF6A8 /* SVN-Gilroy Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66B1F9B19DA342608CBAD4F0 /* SVN-Gilroy Light.otf */; };
+		C672C405840D4A09BBDE1F1B /* SVN-Gilroy Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D7C3A9E57A5B4CE7891C67A6 /* SVN-Gilroy Medium.otf */; };
+		23E224000E4E4C1983129785 /* SVN-Gilroy Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 38D7A3E68AC04CF3B840E395 /* SVN-Gilroy Regular.otf */; };
+		A7F36B6E9F154FBE8605AEAA /* SVN-Gilroy SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 26929401346A40B7838E1D96 /* SVN-Gilroy SemiBold.otf */; };
+		3FC532905D07475DB140BFE2 /* SVN-Gilroy Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = EAAF6422D62B43D09586548C /* SVN-Gilroy Thin.otf */; };
+		64246B2AC3E2479CB09B1A3F /* SVN-Gilroy XBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF427B91242145B4B8BE1DB9 /* SVN-Gilroy XBold.otf */; };
+		8739EEEA08FB41E2A6F9088F /* SVN-Gilroy Xlight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 811DD0986CB04E7DAC3401D1 /* SVN-Gilroy Xlight.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +142,24 @@
 		13E4BED1B48E4C8889F31B4B /* HelveticaNeue-Medium.otf */ = {isa = PBXFileReference; name = "HelveticaNeue-Medium.otf"; path = "../assets/fonts/HelveticaNeue-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		F30F908DCBD44B7EB2C28608 /* HelveticaNeue-UltraLight.otf */ = {isa = PBXFileReference; name = "HelveticaNeue-UltraLight.otf"; path = "../assets/fonts/HelveticaNeue-UltraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		36E5F04F415A4F519EFAA124 /* HelveticaNeue.otf */ = {isa = PBXFileReference; name = "HelveticaNeue.otf"; path = "../assets/fonts/HelveticaNeue.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		765F65C4E2D043FD8935699B /* Geomanist-Black.otf */ = {isa = PBXFileReference; name = "Geomanist-Black.otf"; path = "../assets/fonts/Geomanist-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F7D6968A9A7845E2A1A6B8AF /* Geomanist-Bold.otf */ = {isa = PBXFileReference; name = "Geomanist-Bold.otf"; path = "../assets/fonts/Geomanist-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FE1B33A00F7C417BA50CE07E /* Geomanist-Book.otf */ = {isa = PBXFileReference; name = "Geomanist-Book.otf"; path = "../assets/fonts/Geomanist-Book.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AD00FA399B12414B823A918B /* Geomanist-Light.otf */ = {isa = PBXFileReference; name = "Geomanist-Light.otf"; path = "../assets/fonts/Geomanist-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8D1919DB97B14FF6A6B31A45 /* Geomanist-Medium.otf */ = {isa = PBXFileReference; name = "Geomanist-Medium.otf"; path = "../assets/fonts/Geomanist-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4C0372FC2B49400BB98B67C3 /* Geomanist-Regular.otf */ = {isa = PBXFileReference; name = "Geomanist-Regular.otf"; path = "../assets/fonts/Geomanist-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CEE212B2C7B3434FAEC702EC /* Geomanist-Thin.otf */ = {isa = PBXFileReference; name = "Geomanist-Thin.otf"; path = "../assets/fonts/Geomanist-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F2803711B1984DDE89CB1487 /* Geomanist-Ultra.otf */ = {isa = PBXFileReference; name = "Geomanist-Ultra.otf"; path = "../assets/fonts/Geomanist-Ultra.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		75E7DAAAA4554825BC6A34FE /* SVN-Gilroy Black.otf */ = {isa = PBXFileReference; name = "SVN-Gilroy Black.otf"; path = "../assets/fonts/SVN-Gilroy Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5ABDEA66449341A8A40741A4 /* SVN-Gilroy Bold.otf */ = {isa = PBXFileReference; name = "SVN-Gilroy Bold.otf"; path = "../assets/fonts/SVN-Gilroy Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		79DCE62ED3924B888C5A8D00 /* SVN-Gilroy Heavy.otf */ = {isa = PBXFileReference; name = "SVN-Gilroy Heavy.otf"; path = "../assets/fonts/SVN-Gilroy Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		66B1F9B19DA342608CBAD4F0 /* SVN-Gilroy Light.otf */ = {isa = PBXFileReference; name = "SVN-Gilroy Light.otf"; path = "../assets/fonts/SVN-Gilroy Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D7C3A9E57A5B4CE7891C67A6 /* SVN-Gilroy Medium.otf */ = {isa = PBXFileReference; name = "SVN-Gilroy Medium.otf"; path = "../assets/fonts/SVN-Gilroy Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		38D7A3E68AC04CF3B840E395 /* SVN-Gilroy Regular.otf */ = {isa = PBXFileReference; name = "SVN-Gilroy Regular.otf"; path = "../assets/fonts/SVN-Gilroy Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		26929401346A40B7838E1D96 /* SVN-Gilroy SemiBold.otf */ = {isa = PBXFileReference; name = "SVN-Gilroy SemiBold.otf"; path = "../assets/fonts/SVN-Gilroy SemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EAAF6422D62B43D09586548C /* SVN-Gilroy Thin.otf */ = {isa = PBXFileReference; name = "SVN-Gilroy Thin.otf"; path = "../assets/fonts/SVN-Gilroy Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EF427B91242145B4B8BE1DB9 /* SVN-Gilroy XBold.otf */ = {isa = PBXFileReference; name = "SVN-Gilroy XBold.otf"; path = "../assets/fonts/SVN-Gilroy XBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		811DD0986CB04E7DAC3401D1 /* SVN-Gilroy Xlight.otf */ = {isa = PBXFileReference; name = "SVN-Gilroy Xlight.otf"; path = "../assets/fonts/SVN-Gilroy Xlight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +309,24 @@
 				13E4BED1B48E4C8889F31B4B /* HelveticaNeue-Medium.otf */,
 				F30F908DCBD44B7EB2C28608 /* HelveticaNeue-UltraLight.otf */,
 				36E5F04F415A4F519EFAA124 /* HelveticaNeue.otf */,
+				765F65C4E2D043FD8935699B /* Geomanist-Black.otf */,
+				F7D6968A9A7845E2A1A6B8AF /* Geomanist-Bold.otf */,
+				FE1B33A00F7C417BA50CE07E /* Geomanist-Book.otf */,
+				AD00FA399B12414B823A918B /* Geomanist-Light.otf */,
+				8D1919DB97B14FF6A6B31A45 /* Geomanist-Medium.otf */,
+				4C0372FC2B49400BB98B67C3 /* Geomanist-Regular.otf */,
+				CEE212B2C7B3434FAEC702EC /* Geomanist-Thin.otf */,
+				F2803711B1984DDE89CB1487 /* Geomanist-Ultra.otf */,
+				75E7DAAAA4554825BC6A34FE /* SVN-Gilroy Black.otf */,
+				5ABDEA66449341A8A40741A4 /* SVN-Gilroy Bold.otf */,
+				79DCE62ED3924B888C5A8D00 /* SVN-Gilroy Heavy.otf */,
+				66B1F9B19DA342608CBAD4F0 /* SVN-Gilroy Light.otf */,
+				D7C3A9E57A5B4CE7891C67A6 /* SVN-Gilroy Medium.otf */,
+				38D7A3E68AC04CF3B840E395 /* SVN-Gilroy Regular.otf */,
+				26929401346A40B7838E1D96 /* SVN-Gilroy SemiBold.otf */,
+				EAAF6422D62B43D09586548C /* SVN-Gilroy Thin.otf */,
+				EF427B91242145B4B8BE1DB9 /* SVN-Gilroy XBold.otf */,
+				811DD0986CB04E7DAC3401D1 /* SVN-Gilroy Xlight.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -414,6 +468,24 @@
 				492107F2F5844B94AF6C0C04 /* HelveticaNeue-Medium.otf in Resources */,
 				B66C019BF9FD49E987AE30F5 /* HelveticaNeue-UltraLight.otf in Resources */,
 				EFEAB14B69FF40948660B876 /* HelveticaNeue.otf in Resources */,
+				67D463EB508641AA9E9C00E7 /* Geomanist-Black.otf in Resources */,
+				B2CF293C306A4C62B502B87B /* Geomanist-Bold.otf in Resources */,
+				9821177C69BD439EB7C66965 /* Geomanist-Book.otf in Resources */,
+				A7D517206B254267A81195A0 /* Geomanist-Light.otf in Resources */,
+				9DE2C61543A840EA95A1CDF1 /* Geomanist-Medium.otf in Resources */,
+				8597AA158D2C488CB97E1609 /* Geomanist-Regular.otf in Resources */,
+				65F3993F607041E3BC27C7B8 /* Geomanist-Thin.otf in Resources */,
+				C18F6009487049B08E22CD67 /* Geomanist-Ultra.otf in Resources */,
+				95BE4B75325249F7A2FB291B /* SVN-Gilroy Black.otf in Resources */,
+				EC2A73AC03094370B4A6364F /* SVN-Gilroy Bold.otf in Resources */,
+				0345D8C777FF427091EA2A88 /* SVN-Gilroy Heavy.otf in Resources */,
+				6E90DE19090D4C44B1DDF6A8 /* SVN-Gilroy Light.otf in Resources */,
+				C672C405840D4A09BBDE1F1B /* SVN-Gilroy Medium.otf in Resources */,
+				23E224000E4E4C1983129785 /* SVN-Gilroy Regular.otf in Resources */,
+				A7F36B6E9F154FBE8605AEAA /* SVN-Gilroy SemiBold.otf in Resources */,
+				3FC532905D07475DB140BFE2 /* SVN-Gilroy Thin.otf in Resources */,
+				64246B2AC3E2479CB09B1A3F /* SVN-Gilroy XBold.otf in Resources */,
+				8739EEEA08FB41E2A6F9088F /* SVN-Gilroy Xlight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

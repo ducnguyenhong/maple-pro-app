@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
   tSearch: {
     color: '#828282',
     marginLeft: 8,
-    fontFamily: 'HelveticaNeue',
-    fontSize: 13,
+    fontFamily: 'SVN-Gilroy Medium',
+    fontSize: 14,
   },
 });

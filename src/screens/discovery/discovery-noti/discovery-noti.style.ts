@@ -42,12 +42,12 @@ export const styles = StyleSheet.create({
   },
 
   tNotiItemTitle: {
-    fontFamily: 'HelveticaNeue-Medium',
+    fontFamily: 'SVN-Gilroy Medium',
     fontSize: 13,
   },
 
   tNotiItemContent: {
-    fontFamily: 'HelveticaNeue',
+    fontFamily: 'SVN-Gilroy Regular',
     fontSize: 13,
   },
 

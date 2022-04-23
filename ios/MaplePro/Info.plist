@@ -93,6 +93,24 @@
 		<string>HelveticaNeue-Medium.otf</string>
 		<string>HelveticaNeue-UltraLight.otf</string>
 		<string>HelveticaNeue.otf</string>
+		<string>Geomanist-Black.otf</string>
+		<string>Geomanist-Bold.otf</string>
+		<string>Geomanist-Book.otf</string>
+		<string>Geomanist-Light.otf</string>
+		<string>Geomanist-Medium.otf</string>
+		<string>Geomanist-Regular.otf</string>
+		<string>Geomanist-Thin.otf</string>
+		<string>Geomanist-Ultra.otf</string>
+		<string>SVN-Gilroy Black.otf</string>
+		<string>SVN-Gilroy Bold.otf</string>
+		<string>SVN-Gilroy Heavy.otf</string>
+		<string>SVN-Gilroy Light.otf</string>
+		<string>SVN-Gilroy Medium.otf</string>
+		<string>SVN-Gilroy Regular.otf</string>
+		<string>SVN-Gilroy SemiBold.otf</string>
+		<string>SVN-Gilroy Thin.otf</string>
+		<string>SVN-Gilroy XBold.otf</string>
+		<string>SVN-Gilroy Xlight.otf</string>
 	</array>
 </dict>
 </plist>
