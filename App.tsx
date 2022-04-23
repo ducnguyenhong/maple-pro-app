@@ -3,6 +3,9 @@ import Toast from 'react-native-toast-message';
 import {RecoilRoot} from 'recoil';
 import AppRouter from './src/routers';
 import SplashScreen from 'react-native-splash-screen';
+import {QueryClient, QueryClientProvider} from 'react-query';
+
+const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
@@ -10,10 +13,12 @@ const App = () => {
   }, []);
 
   return (
-    <RecoilRoot>
-      <AppRouter />
-      <Toast />
-    </RecoilRoot>
+    <QueryClientProvider client={queryClient}>
+      <RecoilRoot>
+        <AppRouter />
+        <Toast />
+      </RecoilRoot>
+    </QueryClientProvider>
   );
 };
 

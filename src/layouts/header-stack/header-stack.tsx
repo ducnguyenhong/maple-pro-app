@@ -1,10 +1,11 @@
 import React from 'react';
-import {ImageBackground, StatusBar, Text, View} from 'react-native';
+import {ImageBackground, StatusBar, Text, TouchableOpacity, View} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import ImgHeaderBackground from '../../assets/common/bg-header.png';
+import ImgHeaderBackground from 'assets/common/bg-header.png';
 import {useNavigation} from '@react-navigation/native';
 import {StackHeaderProps} from '@react-navigation/stack';
 import {styles} from './header-stack.style';
+import Ionicon from 'react-native-vector-icons/Ionicons';
 
 interface HeaderStackProps extends StackHeaderProps {
   backButton?: boolean;
@@ -36,7 +37,11 @@ const HeaderStack: React.FC<HeaderStackProps> = props => {
               {title || route.name}
             </Text>
           </View>
-          <View style={styles.vHeaderRight} />
+          <View style={styles.vHeaderRight}>
+            <TouchableOpacity activeOpacity={0.8} style={styles.toSearch} onPress={() => navigation.navigate('Search')}>
+              <Ionicon name="search" size={19} color="#FFF" />
+            </TouchableOpacity>
+          </View>
         </View>
       </ImageBackground>
     </View>

@@ -1,10 +1,12 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-  vHeader: {},
+  vHeader: {
+    overflow: 'hidden',
+  },
 
   imgbHeader: {
-    height: 80,
+    height: 70,
     width: '100%',
     position: 'relative',
     justifyContent: 'center',
@@ -32,12 +34,24 @@ export const styles = StyleSheet.create({
   },
 
   tTitle: {
-    color: '#fff',
-    fontSize: 20,
+    color: '#FFF',
+    fontSize: 18,
     padding: 15,
+    fontFamily: 'SVN-Gilroy Medium',
   },
 
   vHeaderRight: {
     flex: 1 / 3,
+    alignItems: 'flex-end',
+    justifyContent: 'center',
+    height: '100%',
+  },
+
+  toSearch: {
+    paddingHorizontal: 20,
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 5,
   },
 });

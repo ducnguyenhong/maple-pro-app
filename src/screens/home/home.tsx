@@ -125,12 +125,8 @@ const HomeScreen: React.FC = () => {
     <BottomTab.Navigator
       initialRouteName="Discovery"
       screenOptions={({route}) => ({
-        // style: styles.navigator,
-        tabStyle: {
-          // backgroundColor: barColor
-        },
         tabBarIcon: ({color, focused}) => getIconTab(route.name, focused, color),
-        tabBarActiveTintColor: '#02B04B',
+        tabBarActiveTintColor: '#F06300',
         tabBarInactiveTintColor: '#A7A7A7',
         tabBarStyle: {
           height: 60,
@@ -140,12 +136,11 @@ const HomeScreen: React.FC = () => {
           // borderTopStartRadius: 30,
           borderTopLeftRadius: 20,
         },
-        headerStyle: {backgroundColor: '#090909'},
         headerTitleStyle: {color: '#FFF'},
         tabBarLabelStyle: {
           marginBottom: 8,
           fontSize: 13,
-          fontFamily: 'SVN-Gilroy Medium',
+          fontFamily: 'SVN-Gilroy SemiBold',
         },
         headerShown: false,
         tabBarShowLabel: true,
@@ -173,7 +168,7 @@ const HomeScreen: React.FC = () => {
         component={DiscoveryScreen}
         options={{
           header: props => <HeaderTab {...props} title="Khám phá" />,
-          // headerShown: true,
+          headerShown: true,
           tabBarLabel: 'Khám phá',
         }}
       />

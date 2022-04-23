@@ -1,10 +1,11 @@
 import React from 'react';
-import {ImageBackground, StatusBar, Text, View} from 'react-native';
+import {ImageBackground, StatusBar, Text, TouchableOpacity, View} from 'react-native';
 import {styles} from './header-tab.style';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {BottomTabHeaderProps} from '@react-navigation/bottom-tabs';
-import ImgHeaderBackground from '../../assets/common/bg-header.png';
+import ImgHeaderBackground from 'assets/common/bg-header.png';
 import {useNavigation} from '@react-navigation/native';
+import Ionicon from 'react-native-vector-icons/Ionicons';
 
 interface HeaderTabProps extends BottomTabHeaderProps {
   backButton?: boolean;
@@ -34,7 +35,11 @@ const HeaderTab: React.FC<HeaderTabProps> = props => {
           <View style={styles.vHeaderCenter}>
             <Text style={styles.tTitle}>{title || route.name}</Text>
           </View>
-          <View style={styles.vHeaderRight} />
+          <View style={styles.vHeaderRight}>
+            <TouchableOpacity activeOpacity={0.8} style={styles.toSearch} onPress={() => navigation.navigate('Search')}>
+              <Ionicon name="search" size={19} color="#FFF" />
+            </TouchableOpacity>
+          </View>
         </View>
       </ImageBackground>
     </View>

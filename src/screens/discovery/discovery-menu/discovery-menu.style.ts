@@ -3,6 +3,7 @@ import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
   vMenu: {
     marginTop: 15,
+    paddingHorizontal: 15,
   },
 
   ccMenu: {
