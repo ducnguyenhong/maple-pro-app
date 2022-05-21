@@ -22,6 +22,7 @@ export const styles = StyleSheet.create({
     fontFamily: 'SVN-Gilroy SemiBold',
     fontSize: 16,
     color: '#666',
+    textAlign: 'justify',
   },
 
   tNewsSource: {
@@ -34,6 +35,6 @@ export const styles = StyleSheet.create({
     height: 70,
     borderRadius: 10,
     overflow: 'hidden',
-    marginLeft: 10,
+    marginLeft: 20,
   },
 });

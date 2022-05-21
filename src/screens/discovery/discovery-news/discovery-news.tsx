@@ -27,14 +27,10 @@ const DiscoveryNews: React.FC = () => {
           <LinkPreview
             text={item.link}
             renderLinkPreview={({previewData}) => {
-              if (!previewData) {
+              if (!previewData || !previewData.title || item.source.toUpperCase().includes('BBC')) {
                 return null;
               }
-              const {title, description, image} = previewData;
-
-              if (!title) {
-                return null;
-              }
+              const {title, image} = previewData;
 
               return (
                 <TouchableHighlight
