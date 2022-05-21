@@ -37,8 +37,6 @@ const NoteNormal: React.FC = () => {
     return () => {};
   }, [getNoteList]);
 
-  console.log('ducnh3', notes);
-
   return (
     <View style={styles.vMain}>
       <FlatList

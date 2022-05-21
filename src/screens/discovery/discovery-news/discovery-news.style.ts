@@ -26,6 +26,7 @@ export const styles = StyleSheet.create({
 
   tNewsSource: {
     fontFamily: 'SVN-Gilroy Medium',
+    marginTop: 3,
   },
 
   fimgNewsThumbnail: {

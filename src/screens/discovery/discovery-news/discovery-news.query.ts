@@ -1,18 +1,26 @@
 import axios from 'axios';
 import get from 'lodash/get';
+import {convertXML} from 'simple-xml-to-json';
 
 export const getNews = () => {
   return axios
-    .get('https://newsapi.org/v2/everything', {
-      params: {
-        q: 'tin tức',
-        apiKey: '4401cc4d4f6a4072b22f8e379a7dc6b7',
-        pageSize: 10,
-        domains: '24h.com.vn,vnexpress.net,zingnews.vn,vtv.vn',
-      },
-    })
+    .get('https://news.google.com/rss?q=vietnam&hl=vi-VI')
     .then(response => {
-      return get(response, 'data.articles');
+      const a = convertXML(response.data);
+
+      const b = get(a, 'rss.children.0.channel.children');
+
+      const c = b.filter((item: any) => !!item.item);
+
+      const d = c.map((item: any) => ({
+        title: get(item, 'item.children.0.title.content'),
+        link: get(item, 'item.children.1.link.content'),
+        pubDate: get(item, 'item.children.3.pubDate.content'),
+        source: get(item, 'item.children.5.source.content'),
+      }));
+
+      return d;
     })
+
     .catch(e => e);
 };
