@@ -1,6 +1,32 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
+  vNews: {
+    position: 'relative',
+    borderTopWidth: 0.5,
+    borderColor: '#E6E6E6',
+    paddingTop: 15,
+    overflow: 'hidden',
+  },
+
+  vLoading: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    zIndex: 5,
+    height: 415,
+    backgroundColor: '#FFF',
+    paddingTop: 40,
+    alignItems: 'center',
+  },
+
+  tLoading: {
+    marginTop: 20,
+    fontFamily: 'SVN-Gilroy Medium',
+    fontSize: 15,
+  },
+
   thNewsItem: {
     borderBottomWidth: 0.5,
     borderColor: '#E6E6E6',
