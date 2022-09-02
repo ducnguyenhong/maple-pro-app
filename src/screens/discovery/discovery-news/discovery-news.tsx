@@ -1,15 +1,18 @@
 import {DISCOVERY_NEWS} from 'models/discovery-news';
 import React, {memo, useState, useEffect} from 'react';
-import {FlatList, Text, TouchableHighlight, View, ActivityIndicator} from 'react-native';
+import {FlatList, Text, TouchableHighlight, View} from 'react-native';
 import {useQuery} from 'react-query';
 import {getNews} from './discovery-news.query';
 import FastImage from 'react-native-fast-image';
 import {useNavigation} from '@react-navigation/native';
 import {styles} from './discovery-news.style';
 import {LinkPreview} from '@flyerhq/react-native-link-preview';
+import loadable from '@loadable/component';
+
+const LoadingNews = loadable(() => import('./subs/discovery-news.loading'));
 
 const DiscoveryNews: React.FC = () => {
-  const {data, isLoading: loadingData, status} = useQuery<DISCOVERY_NEWS[]>('DISCOVERY_NEWS', getNews);
+  const {data, isLoading: loadingData, status} = useQuery<DISCOVERY_NEWS[]>(['DISCOVERY_NEWS'], getNews);
   const [loadingPreview, setLoadingPreview] = useState(true);
 
   const navigation = useNavigation<any>();
@@ -19,7 +22,7 @@ const DiscoveryNews: React.FC = () => {
       if (status === 'success') {
         setLoadingPreview(false);
       }
-    }, 2500);
+    }, 3000);
     return () => clearTimeout(setLoading);
   }, [status]);
 
@@ -27,8 +30,7 @@ const DiscoveryNews: React.FC = () => {
     <View style={{...styles.vNews, height: loadingPreview ? 400 : undefined}}>
       {(loadingPreview || loadingData) && (
         <View style={styles.vLoading}>
-          <ActivityIndicator color="#828282" size={30} />
-          <Text style={styles.tLoading}>Đang lấy tin tức...</Text>
+          <LoadingNews />
         </View>
       )}
       <FlatList

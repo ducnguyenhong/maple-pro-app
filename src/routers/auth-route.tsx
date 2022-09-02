@@ -1,7 +1,7 @@
 import loadable from '@loadable/component';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import {RootStackParamList} from './router.type';
+import { RootStackParamList } from './router.type';
 
 const HeaderStack = loadable(() => import('../layouts/header-stack'));
 

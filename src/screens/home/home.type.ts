@@ -8,4 +8,5 @@ export type RootTabParamList = {
   Note: undefined;
   User: undefined;
   Utility: undefined;
+  FootBall: undefined;
 };

@@ -15,9 +15,7 @@ const DiscoveryScreen: React.FC = () => {
 
   const onRefresh = useCallback(() => {
     setRefresh(true);
-    queryClient.refetchQueries('DISCOVERY_NEWS').finally(() => {
-      setRefresh(false);
-    });
+    queryClient.refetchQueries(['DISCOVERY_NEWS']).finally(() => setRefresh(false));
   }, [queryClient]);
 
   return (

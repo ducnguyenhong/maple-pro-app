@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     zIndex: 5,
     height: 415,
     backgroundColor: '#FFF',
-    paddingTop: 40,
+    paddingTop: 20,
     alignItems: 'center',
   },
 

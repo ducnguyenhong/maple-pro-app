@@ -29,7 +29,7 @@ const DiscoveryMenu: React.FC = () => {
       {
         title: 'Bóng đá',
         icon: IconFootball,
-        onPress: () => {},
+        onPress: () => navigation.navigate('FootBall'),
         bgColor: '#FFF3F3',
       },
       {
