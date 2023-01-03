@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   vSearch: {
@@ -8,6 +8,8 @@ export const styles = StyleSheet.create({
     borderColor: '#D9D9D9',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    marginHorizontal: 20,
+    marginTop: 20,
   },
 
   toSearchLeft: {

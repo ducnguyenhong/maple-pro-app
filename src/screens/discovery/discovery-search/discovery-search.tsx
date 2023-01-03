@@ -1,8 +1,8 @@
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {Text, TouchableOpacity, View} from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 import Ionicon from 'react-native-vector-icons/Ionicons';
-import {styles} from './discovery-search.style';
+import { styles } from './discovery-search.style';
 
 const DiscoverySearch: React.FC = () => {
   const navigation = useNavigation();

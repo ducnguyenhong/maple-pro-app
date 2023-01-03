@@ -1,18 +1,18 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   vInfo: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 15,
-    paddingHorizontal: 15,
+    paddingHorizontal: 20,
   },
 
   vLeft: {},
 
   vDate: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     marginTop: 5,
   },
 
@@ -20,7 +20,11 @@ export const styles = StyleSheet.create({
     marginRight: 3,
   },
 
-  tSubDate: {},
+  tSubDate: {
+    fontSize: 12,
+    marginLeft: 4,
+    color: '#828282',
+  },
 
   vHello: {
     flexDirection: 'row',
@@ -31,7 +35,9 @@ export const styles = StyleSheet.create({
     marginRight: 5,
   },
 
-  tName: {},
+  tName: {
+    fontFamily: 'SVN-Gilroy Medium',
+  },
 
   vWeather: {
     alignItems: 'center',

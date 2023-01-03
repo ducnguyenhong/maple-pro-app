@@ -43,7 +43,7 @@ const HomeScreen: React.FC = () => {
       initialRouteName="Discovery"
       screenOptions={({route}) => ({
         tabBarIcon: ({color, focused}) => getIconTab(route.name, focused, color),
-        tabBarActiveTintColor: '#F06300',
+        tabBarActiveTintColor: '#36af5c',
         tabBarInactiveTintColor: '#A7A7A7',
         tabBarStyle: {
           height: 60,
@@ -83,7 +83,7 @@ const HomeScreen: React.FC = () => {
         name="Discovery"
         component={DiscoveryScreen}
         options={{
-          header: props => <HeaderTab {...props} title="Khám phá" />,
+          header: props => <HeaderTab {...props} title="Khám phá" onlyShowStatusBar />,
           headerShown: true,
           tabBarLabel: 'Khám phá',
         }}

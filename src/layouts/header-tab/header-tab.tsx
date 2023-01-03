@@ -1,20 +1,25 @@
-import React from 'react';
-import {ImageBackground, StatusBar, Text, TouchableOpacity, View} from 'react-native';
-import {styles} from './header-tab.style';
-import Icon from 'react-native-vector-icons/FontAwesome5';
-import {BottomTabHeaderProps} from '@react-navigation/bottom-tabs';
+import { BottomTabHeaderProps } from '@react-navigation/bottom-tabs';
+import { useNavigation } from '@react-navigation/native';
 import ImgHeaderBackground from 'assets/common/bg-header.png';
-import {useNavigation} from '@react-navigation/native';
+import React from 'react';
+import { ImageBackground, StatusBar, Text, TouchableOpacity, View } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 import Ionicon from 'react-native-vector-icons/Ionicons';
+import { styles } from './header-tab.style';
 
 interface HeaderTabProps extends BottomTabHeaderProps {
   backButton?: boolean;
   title?: string;
+  onlyShowStatusBar?: boolean;
 }
 
 const HeaderTab: React.FC<HeaderTabProps> = props => {
-  const {route, backButton, title} = props;
+  const {route, backButton, title, onlyShowStatusBar} = props;
   const navigation = useNavigation<any>();
+
+  if (onlyShowStatusBar) {
+    return <StatusBar backgroundColor="#36af5c" />;
+  }
 
   return (
     <View style={styles.vHeader}>

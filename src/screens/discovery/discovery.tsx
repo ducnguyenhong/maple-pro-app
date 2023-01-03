@@ -1,13 +1,12 @@
-import loadable from '@loadable/component';
-import React, {useState, useCallback} from 'react';
-import {SafeAreaView, RefreshControl, ScrollView} from 'react-native';
-import {useQueryClient} from 'react-query';
-import {styles} from './discovery.style';
-
-const DiscoveryInfo = loadable(() => import('./discovery-info'));
-const DiscoveryNoti = loadable(() => import('./discovery-noti'));
-const DiscoveryMenu = loadable(() => import('./discovery-menu'));
-const DiscoveryNews = loadable(() => import('./discovery-news'));
+import React, { useCallback, useState } from 'react';
+import { RefreshControl, SafeAreaView, ScrollView, StatusBar } from 'react-native';
+import { useQueryClient } from 'react-query';
+import DiscoveryDashboard from './discovery-dashboard';
+import DiscoveryInfo from './discovery-info';
+import DiscoveryMenu from './discovery-menu';
+import DiscoveryNews from './discovery-news';
+import DiscoverySearch from './discovery-search';
+import { styles } from './discovery.style';
 
 const DiscoveryScreen: React.FC = () => {
   const [refresh, setRefresh] = useState(false);
@@ -20,11 +19,13 @@ const DiscoveryScreen: React.FC = () => {
 
   return (
     <SafeAreaView style={styles.savMain}>
+      <StatusBar />
       <ScrollView
         showsVerticalScrollIndicator={false}
         refreshControl={<RefreshControl refreshing={refresh} onRefresh={onRefresh} />}>
         <DiscoveryInfo />
-        <DiscoveryNoti />
+        <DiscoveryDashboard />
+        <DiscoverySearch />
         <DiscoveryMenu />
         <DiscoveryNews />
       </ScrollView>

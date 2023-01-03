@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   vNews: {
@@ -48,7 +48,6 @@ export const styles = StyleSheet.create({
     fontFamily: 'SVN-Gilroy SemiBold',
     fontSize: 16,
     color: '#666',
-    textAlign: 'justify',
   },
 
   tNewsSource: {
