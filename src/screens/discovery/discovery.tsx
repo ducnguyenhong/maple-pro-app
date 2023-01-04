@@ -4,7 +4,6 @@ import { useQueryClient } from 'react-query';
 import DiscoveryInfo from './discovery-info';
 import DiscoveryMenu from './discovery-menu';
 import DiscoveryNews from './discovery-news';
-import DiscoverySearch from './discovery-search';
 import { styles } from './discovery.style';
 
 const DiscoveryScreen: React.FC = () => {
@@ -24,7 +23,7 @@ const DiscoveryScreen: React.FC = () => {
         refreshControl={<RefreshControl refreshing={refresh} onRefresh={onRefresh} />}>
         <DiscoveryInfo />
         {/* <DiscoveryDashboard /> */}
-        <DiscoverySearch />
+        {/* <DiscoverySearch /> */}
         <DiscoveryMenu />
         <DiscoveryNews />
       </ScrollView>

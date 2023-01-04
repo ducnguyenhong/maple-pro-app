@@ -4,7 +4,6 @@ export const styles = StyleSheet.create({
   vInfo: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: 15,
     paddingHorizontal: 20,
   },
 
@@ -18,12 +17,14 @@ export const styles = StyleSheet.create({
 
   tDate: {
     marginRight: 3,
+    color: '#FFF',
+    fontFamily: 'SVN-Gilroy Medium',
   },
 
   tSubDate: {
     fontSize: 12,
     marginLeft: 4,
-    color: '#828282',
+    color: '#FFF',
   },
 
   vHello: {
@@ -33,10 +34,14 @@ export const styles = StyleSheet.create({
 
   tHello: {
     marginRight: 5,
+    color: '#FFF',
+    fontFamily: 'SVN-Gilroy Medium',
   },
 
   tName: {
-    fontFamily: 'SVN-Gilroy Medium',
+    fontFamily: 'SVN-Gilroy SemiBold',
+    color: '#FFF',
+    textTransform: 'uppercase',
   },
 
   vWeather: {

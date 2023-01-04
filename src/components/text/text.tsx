@@ -1,12 +1,12 @@
 import React, { memo, ReactNode, useMemo } from 'react';
-import { StyleProp, Text as TextComponent, TextStyle } from 'react-native';
+import { StyleProp, Text as TextComponent, TextProps, TextStyle } from 'react-native';
 
-interface TextProps {
+interface TextComponentProps {
   style?: StyleProp<TextStyle>;
   children?: ReactNode | number | string;
 }
 
-const Text: React.FC<TextProps> = props => {
+const Text: React.FC<TextComponentProps & TextProps> = props => {
   const {children, style, ...rest} = props;
 
   const primaryStyle = useMemo(() => {

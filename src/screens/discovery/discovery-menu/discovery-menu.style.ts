@@ -2,8 +2,13 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   vMenu: {
-    marginVertical: 15,
     paddingHorizontal: 15,
+    paddingTop: 10,
+    borderWidth: 0.5,
+    borderRadius: 10,
+    margin: 15,
+    borderColor: '#e6e6e6',
+    marginTop: 20,
   },
 
   ccMenu: {
