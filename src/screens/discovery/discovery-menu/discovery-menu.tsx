@@ -1,12 +1,16 @@
-import React, {useMemo} from 'react';
-import {FlatList, Image, ImageProps, Text, TouchableOpacity, View} from 'react-native';
-import IconFootball from '../images/icon-menu-football.png';
-import IconNews from '../images/icon-menu-news.png';
-import IconWeather from '../images/icon-menu-weather.png';
+import { useNavigation } from '@react-navigation/native';
+import React, { useMemo } from 'react';
+import { FlatList, Image, ImageProps, Text, TouchableOpacity, View } from 'react-native';
+import { URL_WEATHER } from '../../../constants/web-view-url';
 import IconAssistant from '../images/icon-menu-assistant.png';
-import {styles} from './discovery-menu.style';
-import {useNavigation} from '@react-navigation/native';
-import {URL_WEATHER} from '../../../constants/web-view-url';
+import IconFootball from '../images/icon-menu-football.png';
+import IconMore from '../images/icon-menu-more.png';
+import IconNews from '../images/icon-menu-news.png';
+import IconNoti from '../images/icon-menu-noti.png';
+import IconPlay from '../images/icon-menu-play.png';
+import IconWeather from '../images/icon-menu-weather.png';
+import IconWork from '../images/icon-menu-work.png';
+import { styles } from './discovery-menu.style';
 
 interface MenuItem {
   title: string;
@@ -21,10 +25,22 @@ const DiscoveryMenu: React.FC = () => {
   const MENU_LIST: MenuItem[] = useMemo(
     () => [
       {
+        title: 'Thông báo',
+        icon: IconNoti,
+        onPress: () => {},
+        bgColor: '#fff5e5',
+      },
+      {
         title: 'Tin tức',
         icon: IconNews,
         onPress: () => navigation.navigate('Home'),
-        bgColor: '#F2F9FF',
+        bgColor: '#f0f7ff',
+      },
+      {
+        title: 'Công việc',
+        icon: IconWork,
+        onPress: () => {},
+        bgColor: '#f1edea',
       },
       {
         title: 'Bóng đá',
@@ -44,6 +60,18 @@ const DiscoveryMenu: React.FC = () => {
         onPress: () => {},
         bgColor: '#EFFBEF',
       },
+      {
+        title: 'Giải trí',
+        icon: IconPlay,
+        onPress: () => {},
+        bgColor: '#fff0ff',
+      },
+      {
+        title: 'Xem thêm',
+        icon: IconMore,
+        onPress: () => {},
+        bgColor: '#f0f4ff',
+      },
     ],
     [navigation],
   );
@@ -52,7 +80,8 @@ const DiscoveryMenu: React.FC = () => {
     <View style={styles.vMenu}>
       <FlatList
         data={MENU_LIST}
-        horizontal
+        numColumns={4}
+        key="_"
         contentContainerStyle={styles.ccMenu}
         keyExtractor={item => item.bgColor}
         renderItem={({item}) => (

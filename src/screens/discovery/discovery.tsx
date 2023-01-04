@@ -1,7 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import { RefreshControl, SafeAreaView, ScrollView, StatusBar } from 'react-native';
 import { useQueryClient } from 'react-query';
-import DiscoveryDashboard from './discovery-dashboard';
 import DiscoveryInfo from './discovery-info';
 import DiscoveryMenu from './discovery-menu';
 import DiscoveryNews from './discovery-news';
@@ -24,7 +23,7 @@ const DiscoveryScreen: React.FC = () => {
         showsVerticalScrollIndicator={false}
         refreshControl={<RefreshControl refreshing={refresh} onRefresh={onRefresh} />}>
         <DiscoveryInfo />
-        <DiscoveryDashboard />
+        {/* <DiscoveryDashboard /> */}
         <DiscoverySearch />
         <DiscoveryMenu />
         <DiscoveryNews />

@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   vMenu: {
@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
   },
 
   ccMenu: {
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     width: '100%',
   },
 
@@ -15,6 +15,8 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 5,
+    width: '25%',
+    marginBottom: 10,
   },
 
   vItem: {
