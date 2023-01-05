@@ -62,4 +62,23 @@ export const styles = StyleSheet.create({
     overflow: 'hidden',
     marginLeft: 20,
   },
+
+  vNewsLabel: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 15,
+  },
+
+  imgIconNewsLabel: {
+    width: 20,
+    height: 20,
+  },
+
+  tNewsLabel: {
+    textTransform: 'uppercase',
+    marginLeft: 8,
+    fontFamily: 'SVN-Gilroy Medium',
+    fontSize: 13,
+    color: '#2a8948',
+  },
 });

@@ -1,15 +1,14 @@
-import {DISCOVERY_NEWS} from 'models/discovery-news';
-import React, {memo, useState, useEffect} from 'react';
-import {FlatList, Text, TouchableHighlight, View} from 'react-native';
-import {useQuery} from 'react-query';
-import {getNews} from './discovery-news.query';
+import { LinkPreview } from '@flyerhq/react-native-link-preview';
+import { useNavigation } from '@react-navigation/native';
+import { DISCOVERY_NEWS } from 'models/discovery-news';
+import React, { memo, useEffect, useState } from 'react';
+import { FlatList, Image, Text, TouchableHighlight, View } from 'react-native';
 import FastImage from 'react-native-fast-image';
-import {useNavigation} from '@react-navigation/native';
-import {styles} from './discovery-news.style';
-import {LinkPreview} from '@flyerhq/react-native-link-preview';
-import loadable from '@loadable/component';
-
-const LoadingNews = loadable(() => import('./subs/discovery-news.loading'));
+import { useQuery } from 'react-query';
+import { getNews } from './discovery-news.query';
+import { styles } from './discovery-news.style';
+import IconNews from './images/icon-news.png';
+import LoadingNews from './subs/discovery-news.loading';
 
 const DiscoveryNews: React.FC = () => {
   const {data, isLoading: loadingData, status} = useQuery<DISCOVERY_NEWS[]>(['DISCOVERY_NEWS'], getNews);
@@ -28,6 +27,10 @@ const DiscoveryNews: React.FC = () => {
 
   return (
     <View style={{...styles.vNews, height: loadingPreview ? 400 : undefined}}>
+      <View style={styles.vNewsLabel}>
+        <Image source={IconNews} style={styles.imgIconNewsLabel} resizeMode="contain" />
+        <Text style={styles.tNewsLabel}>Tin tức mới</Text>
+      </View>
       {(loadingPreview || loadingData) && (
         <View style={styles.vLoading}>
           <LoadingNews />
