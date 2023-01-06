@@ -18,7 +18,7 @@ const HeaderTab: React.FC<HeaderTabProps> = props => {
   const navigation = useNavigation<any>();
 
   if (onlyShowStatusBar) {
-    return <StatusBar backgroundColor="#36af5c" />;
+    return <StatusBar />;
   }
 
   return (

@@ -2,12 +2,15 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   vMain: {
-    backgroundColor: '#26ba55',
-    position: 'relative',
     marginBottom: 70,
     height: 200,
+  },
+
+  lgMain: {
     borderBottomRightRadius: 20,
     borderBottomLeftRadius: 20,
+    width: '100%',
+    height: '100%',
   },
 
   vNavigation: {
@@ -48,8 +51,8 @@ export const styles = StyleSheet.create({
   },
 
   imgIconCreateEvent: {
-    width: 20,
-    height: 20,
+    width: 22,
+    height: 22,
   },
 
   tEventTitle: {
