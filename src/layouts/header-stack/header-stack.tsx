@@ -1,11 +1,10 @@
-import React from 'react';
-import {ImageBackground, StatusBar, Text, TouchableOpacity, View} from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { useNavigation } from '@react-navigation/native';
+import { StackHeaderProps } from '@react-navigation/stack';
 import ImgHeaderBackground from 'assets/common/bg-header.png';
-import {useNavigation} from '@react-navigation/native';
-import {StackHeaderProps} from '@react-navigation/stack';
-import {styles} from './header-stack.style';
+import React from 'react';
+import { ImageBackground, StatusBar, Text, TouchableOpacity, View } from 'react-native';
 import Ionicon from 'react-native-vector-icons/Ionicons';
+import { styles } from './header-stack.style';
 
 interface HeaderStackProps extends StackHeaderProps {
   backButton?: boolean;
@@ -23,7 +22,7 @@ const HeaderStack: React.FC<HeaderStackProps> = props => {
         <View style={styles.vHeaderContent}>
           <View style={styles.vHeaderLeft}>
             {backButton && (
-              <Icon
+              <Ionicon
                 name="chevron-back"
                 color="#fff"
                 style={styles.icBack}

@@ -74,8 +74,8 @@ const HomeScreen: React.FC = () => {
         name="FootBall"
         component={FootBallScreen}
         options={{
-          header: props => <HeaderTab {...props} title="Bóng đá" />,
-          headerShown: true,
+          // header: props => <HeaderTab {...props} title="Bóng đá" />,
+          headerShown: false,
           tabBarLabel: 'Bóng đá',
         }}
       />

@@ -7,16 +7,12 @@ import LogoLeague1 from './images/logo-league-1.png';
 import LogoPremierLeague from './images/logo-premier-league.png';
 import LogoSerieA from './images/logo-serie-a.png';
 import LogoVLeague from './images/logo-v-league.png';
-import LogoWorldCup from './images/logo-world-cup.png';
 
 export interface FootBallItem {
   url: string;
   logo: ImageProps;
   title: string;
 }
-
-const URL_WORLD_CUP =
-  'https://www.google.com/search?q=l%E1%BB%8Bch+thi+%C4%91%E1%BA%A5u+world+cup+2022&sxsrf=ALiCzsZ6k7NAyCr3eA0JcWNHn2tV-Ptxsg%3A1662147780385&ei=xFwSY5SZF4OPmAW4yY3wCQ&oq=l%E1%BB%8Bch+thi+%C4%91%E1%BA%A5u+w&gs_lcp=Cgdnd3Mtd2l6EAEYADILCAAQgAQQsQMQyQMyCAgAEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDILCAAQgAQQsQMQgwEyBQgAEIAEMgUIABCABDIICAAQgAQQsQM6CggAEEcQ1gQQsAM6BwgAELADEEM6DAguEMgDELADEEMYAUoECEEYAEoECEYYAFDyAVjyAWDvC2gBcAF4AIABbogBbpIBAzAuMZgBAKABAcgBC8ABAdoBBAgBGAg&sclient=gws-wiz#sie=lg;/m/0fp_8fm;2;/m/030q7;mt;fp;1;;;';
 
 const URL_CHAMPION_LEAGUE =
   'https://www.google.com/search?q=l%E1%BB%8Bch+thi+%C4%91%E1%BA%A5u+champions+league&sxsrf=ALiCzsaVH4PkOlkDYM3cMpYu-0S7H3s1KA%3A1662147837849&ei=_VwSY6DBM8ehmAXb36ywDw&oq=l%E1%BB%8Bch+thi+%C4%91%E1%BA%A5u+cham&gs_lcp=Cgdnd3Mtd2l6EAMYADILCAAQgAQQsQMQgwEyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6CggAEEcQ1gQQsAM6DQgAEEcQ1gQQsAMQyQM6BwgAELADEEM6BAgjECc6CAgAEIAEELEDOggIABCxAxCDAUoECEEYAEoECEYYAFC0AljzBWCNDWgBcAF4AIABcIgBsgOSAQMwLjSYAQCgAQHIAQrAAQE&sclient=gws-wiz#sie=lg;/g/11mvmxlddg;2;/m/0c1q0;mt;fp;1;;;';
@@ -46,46 +42,41 @@ export const FOOTBALL_DATA: FootBallItem[] = [
   {
     url: URL_PREMIER_LEAGUE,
     logo: LogoPremierLeague,
-    title: 'Premier League - Ngoại Hạng Anh',
+    title: 'EPL',
   },
   {
     url: URL_LA_LIGA,
     logo: LogoLaLiga,
-    title: 'La Liga - Tây Ban Nha',
+    title: 'La Liga',
   },
   {
     url: URL_LEAGUE_1,
     logo: LogoLeague1,
-    title: 'League 1 - Pháp',
+    title: 'League 1',
   },
   {
     url: URL_BUNDESLIGA,
     logo: LogoBundesliga,
-    title: 'Bundesliga - Đức',
+    title: 'Bundesliga',
   },
   {
     url: URL_SERIE_A,
     logo: LogoSerieA,
-    title: 'Serie A - Ý',
+    title: 'Serie A',
   },
   {
     url: URL_CHAMPION_LEAGUE,
     logo: LogoChampionLeague,
-    title: 'UEFA Champion League',
+    title: 'UCL',
   },
   {
     url: URL_EUROPA_LEAGUE,
     logo: LogoEuropaLeague,
-    title: 'UEFA Europa League',
-  },
-  {
-    url: URL_WORLD_CUP,
-    logo: LogoWorldCup,
-    title: 'FIFA World Cup 2022',
+    title: 'UEL',
   },
   {
     url: URL_V_LEAGUE,
     logo: LogoVLeague,
-    title: 'V-League - Việt Nam',
+    title: 'V-League',
   },
 ];

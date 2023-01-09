@@ -6,13 +6,6 @@ export const styles = StyleSheet.create({
     height: 200,
   },
 
-  lgMain: {
-    borderBottomRightRadius: 20,
-    borderBottomLeftRadius: 20,
-    width: '100%',
-    height: '100%',
-  },
-
   vNavigation: {
     justifyContent: 'flex-end',
     flexDirection: 'row',
