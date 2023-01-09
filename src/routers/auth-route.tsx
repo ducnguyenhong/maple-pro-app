@@ -22,8 +22,7 @@ export const AuthRoute = () => {
         name="WebView"
         component={WebViewScreen}
         options={{
-          header: props => <HeaderStack {...props} backButton title="Maple Pro" />,
-          headerShown: true,
+          headerShown: false,
         }}
       />
       <Stack.Screen

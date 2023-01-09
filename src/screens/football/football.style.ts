@@ -12,12 +12,24 @@ export const styles = StyleSheet.create({
     width: '25%',
   },
 
+  toUtilItem: {
+    alignItems: 'center',
+    marginBottom: 16,
+    width: '33.33%',
+  },
+
   imgItem: {
     width: 35,
     height: 35,
   },
 
   tItem: {
-    fontFamily: 'SVN-Gilroy SemiBold',
+    fontFamily: 'SVN-Gilroy Medium',
+    marginBottom: 2,
+  },
+
+  tUtilItem: {
+    fontFamily: 'SVN-Gilroy Medium',
+    marginTop: 4,
   },
 });

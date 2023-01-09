@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   vMain: {
     marginBottom: 70,
-    height: 200,
+    height: 210,
+    paddingTop: 15,
   },
 
   vNavigation: {
@@ -23,7 +24,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     position: 'absolute',
     left: 0,
-    bottom: -60,
+    bottom: -70,
     width: '100%',
   },
 
@@ -99,7 +100,7 @@ export const styles = StyleSheet.create({
     width: '92%',
     padding: 12,
     borderRadius: 20,
-    height: 150,
+    height: 160,
 
     shadowColor: '#000',
     shadowOffset: {

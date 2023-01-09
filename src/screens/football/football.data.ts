@@ -1,4 +1,7 @@
 import { ImageProps } from 'react-native';
+import IconRank from './images/icon-rank.png';
+import IconSchedule from './images/icon-schedule.png';
+import IconVideo from './images/icon-video.png';
 import LogoBundesliga from './images/logo-bundesliga.png';
 import LogoChampionLeague from './images/logo-champion-league.png';
 import LogoEuropaLeague from './images/logo-europa-league.png';
@@ -78,5 +81,30 @@ export const FOOTBALL_DATA: FootBallItem[] = [
     url: URL_V_LEAGUE,
     logo: LogoVLeague,
     title: 'V-League',
+  },
+];
+
+const UTIL_URL_FOOTBALL_SCHEDULE =
+  'https://www.24h.com.vn/bong-da/lich-thi-dau-bong-da-hom-nay-moi-nhat-c48a364371.html';
+
+const UTIL_URL_FOOTBALL_RANKING = 'https://www.24h.com.vn/bang-xep-hang-bong-da-c295.html';
+
+const UTIL_URL_FOOTBALL_HIGHLIGHT = 'https://www.24h.com.vn/video-highlight-c953.html';
+
+export const UTILITY_DATA: FootBallItem[] = [
+  {
+    url: UTIL_URL_FOOTBALL_SCHEDULE,
+    logo: IconSchedule,
+    title: 'Lịch thi đấu',
+  },
+  {
+    url: UTIL_URL_FOOTBALL_RANKING,
+    logo: IconRank,
+    title: 'Bảng xếp hạng',
+  },
+  {
+    url: UTIL_URL_FOOTBALL_HIGHLIGHT,
+    logo: IconVideo,
+    title: 'Highlight',
   },
 ];

@@ -17,7 +17,7 @@ const DiscoveryScreen: React.FC = () => {
 
   return (
     <SafeAreaView style={styles.savMain}>
-      <StatusBar />
+      <StatusBar backgroundColor="transparent" translucent />
       <ScrollView
         showsVerticalScrollIndicator={false}
         refreshControl={<RefreshControl refreshing={refresh} onRefresh={onRefresh} />}>
